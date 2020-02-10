@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="subclass-fighter-three-halflings-in-a-trench-coat.xml" url="https://raw.githubusercontent.com/BigMOO123/Three-Halflings-in-a-Trenchcoat/master/subclass-fighter-three-halflings-in-a-trench-coat.xml" </file>
+			<file name="subclass-fighter-three-halflings-in-a-trench-coat.xml" url="https://raw.githubusercontent.com/BigMOO123/Three-Halflings-in-a-Trenchcoat/master/subclass-fighter-three-halflings-in-a-trench-coat.xml" />
 		</update>
 	</info>
 	<element name="Three Halflings in a Trenchcoat" type="Archetype" source="Homebrew" id="ID_AW_OOTD_ARCHETYPE_FIGHTER_THTC">
