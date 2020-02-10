@@ -17,7 +17,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Archetype Feature" id="ID_AW_OOTD_ARCHETYPE_FEATURE_THTC" level="1" />
+			<grant type="Archetype Feature" id="ID_AW_OOTD_ARCHETYPE_FEATURE_THTC_TRUEDEVOTION" level="1" />
 			<grant type="Archetype Feature" id="ID_AW_OOTD_ARCHETYPE_FEATURE_THTC_ALLISONE" level="1" />
 			<grant type="Archetype Feature" id="ID_AW_OOTD_ARCHETYPE_FEATURE_HOPLITE_DISCIPLINED_DEFENSE" level="10" />
 			<grant type="Archetype Feature" id="ID_AW_OOTD_ARCHETYPE_FEATURE_HOPLITE_SHIELD_BUSTER" level="15" />
