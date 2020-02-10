@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="subclass-fighter-three-halflings-in-a-trench-coat.xml" />
+		</update>
+	</info>
+	<element name="Three Halflings in a Trenchcoat" type="Archetype" source="Homebrew" id="ID_AW_OOTD_ARCHETYPE_FIGHTER_THTC">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>Disgruntled about the constant short jokes and jabs, three brave halflings decide to turn tables on the tall folk. Armed with trenchcoat and balance, these halflings are ready to change their destiny.</p>
+			<div element="ID_AW_OOTD_ARCHETYPE_FEATURE_THTC_TRUEDEVOTION" />
+			<div element="ID_AW_OOTD_ARCHETYPE_FEATURE_THTC_ALLISONE" />
+			<div element="ID_AW_OOTD_ARCHETYPE_FEATURE_HOPLITE_DISCIPLINED_DEFENSE" />
+			<div element="ID_AW_OOTD_ARCHETYPE_FEATURE_HOPLITE_SHIELD_BUSTER" />
+			<div element="ID_AW_OOTD_ARCHETYPE_FEATURE_HOPLITE_PHALANX_WRECKER" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_AW_OOTD_ARCHETYPE_FEATURE_THTC" level="1" />
+			<grant type="Archetype Feature" id="ID_AW_OOTD_ARCHETYPE_FEATURE_THTC_ALLISONE" level="1" />
+			<grant type="Archetype Feature" id="ID_AW_OOTD_ARCHETYPE_FEATURE_HOPLITE_DISCIPLINED_DEFENSE" level="10" />
+			<grant type="Archetype Feature" id="ID_AW_OOTD_ARCHETYPE_FEATURE_HOPLITE_SHIELD_BUSTER" level="15" />
+			<grant type="Archetype Feature" id="ID_AW_OOTD_ARCHETYPE_FEATURE_HOPLITE_PHALANX_WRECKER" level="18" />
+		</rules>
+	</element>	
+	<element name="True Devotion" type="Archetype Feature" source="Homebrew" id="ID_AW_OOTD_ARCHETYPE_FEATURE_HOPLITE_PHALANX">
+		<description>
+            <p>The Path of the Three Halflings in a Trenchcoat is known only to a select few, and lesser still have the courage and will to follow it.</p>
+            <p class="indent">You must choose this path from the 1st level instead of the 3rd.</p> 
+		</description>
+	</element>
+	<element name="All is One" type="Archetype Feature" source="Homebrew" id="ID_AW_OOTD_ARCHETYPE_FEATURE_THTC_ALLISONE">
+		<description>
+			<p>You Devote your life to the path. There is no place for individualism. The ones who follow this path eat as one, sleep as one, and die as one. The path makes not a unit, squad, or rabble. The path makes one ultimate fighter.</p>
+			<p class="indent">All the halflings are considered as a single creature fot the purpose of health and damage taken.</p>
+			<p class="indent">Any status effects applied to one halfling are applied to the rest as well.</p>
+			<p class="indent">The health pool is the same as a standard fighter's hp, and any damage taken to any halfling is subtracted from the pool like normal.</p>
+			<p class="indent">All halflings wear the same kind of armour. AC does not stack. You get +1 to AC.</p>
+		</description>
+		<sheet>
+			<description>All halflings wear the same kind of armour. AC does not stack. You get +1 to AC.</description>
+		</sheet>
+	</element>
+	<element name="Disciplined Defense" type="Archetype Feature" source="Odyssey of the Dragonlords" id="ID_AW_OOTD_ARCHETYPE_FEATURE_HOPLITE_DISCIPLINED_DEFENSE">
+		<description>
+			<p>Starting at 10th level, you are practiced at using your shield to intercede and protect allies. When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to add your proficiency bonus to the target's AC until the beginning of your next turn. You must be wielding a shield.</p>
+		</description>
+		<sheet>
+			<description action="Reaction">When a creature you can see attacks a target other than you that is within 5 feet of you, add +{{proficiency}} to the target's AC until the beginning of your next turn. You must be wielding a shield.</description>
+		</sheet>
+	</element>
+	<element name="Shield Buster" type="Archetype Feature" source="Odyssey of the Dragonlords" id="ID_AW_OOTD_ARCHETYPE_FEATURE_HOPLITE_SHIELD_BUSTER">
+		<description>
+			<p>Starting at 15th level, your attacks score a critical hit on a roll of 19 or 20. When you score a critical hit with a melee weapon, you knock away your target’s shield if they are wielding one. The shield lands in a free space up to 10 ft. away. If your target is not wielding a shield, then they suffer an additional d6 damage from the sheer force of your weapon attack.</p>
+		</description>
+		<sheet>
+			<description>You crit on a roll of 19 or 20. When you score a critical hit with a melee weapon, you knock your target’s shield 10 feet away if they are wielding one. If your target is not wielding a shield, then they suffer an additional d6 damage from the sheer force of your weapon attack.</description>
+		</sheet>
+	</element>
+	<element name="Phalanx Wrecker" type="Archetype Feature" source="Odyssey of the Dragonlords" id="ID_AW_OOTD_ARCHETYPE_FEATURE_HOPLITE_PHALANX_WRECKER">
+		<description>
+			<p>Starting at 18th level, you have become a whirling machine of death in close quarters combat. When you take the Attack action, you can forgo one of your attacks to make a single melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target.</p>
+		</description>
+		<sheet>
+			<description>When you take the Attack action, you can forgo one of your attacks to make a single melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target.</description>
+		</sheet>
+	</element>
+	
+    <!-- fighting style -->
+	<element name="Hoplite" type="Class Feature" source="Odyssey of the Dragonlords" id="ID_AW_OOTD_CLASS_FEATURE_FIGHTINGSTYLE_HOPLITE">
+		<supports>Fighting Style, Fighter</supports>
+		<description>
+			<p>While you are wielding a shield, you are alert to attacks made against nearby allies. Whenever a creature attacks an ally standing within 5 feet of you with a melee attack, you may use your reaction to make a melee opportunity attack against the offending creature.</p>
+		</description>
+		<sheet>
+			<description usage="Reaction">While you are wielding a shield, whenever a creature attacks an ally standing within 5 feet of you with a melee attack, make a melee opportunity attack against the offending creature.</description>
+		</sheet>
+	</element>
+</elements>
